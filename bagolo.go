@@ -1,6 +1,6 @@
 // Naranza Bagolo, Copyright 2025 Andrea Davanzo and contributors, License AGPLv3
 
-package api
+package bagolo
 
 import (
   "encoding/base64"
@@ -9,7 +9,7 @@ import (
   "errors"
 )
 
-const Version = "1.2025.1"
+const Version = "1.2025.2"
 
 func Auth(r *http.Request) (string, string, error) {
   auth := r.Header.Get("Authorization")
